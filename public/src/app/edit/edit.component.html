@@ -1,0 +1,14 @@
+<div class="container">
+    <form (submit)="editAuthor()">
+        <h6>Edit:</h6>
+        <div class="form-group">
+          <label for="name">
+            <input class="form-control" type="text" name="editAuth.name"
+              [(ngModel)]="editAuth.name" value="{{ editAuth.name }}"/>
+            </label>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-success" value="Update" />
+          <button         </div>
+      </form>
+</div>

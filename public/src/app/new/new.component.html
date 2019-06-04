@@ -1,0 +1,14 @@
+<div class="container">
+    <form (submit)="createNewAuthor()">
+        <h6>Submit a new author:</h6>
+        <div class="form-group">
+          <label for="name">Author's Name:
+            <input class="form-control" type="text" name="newAuthor.name"
+              [(ngModel)]="newAuthor.name" />
+            </label>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-success" value="Create" />
+        </div>
+      </form>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+<h3>{{author.name}}</h3>
+
+  <h6 *ngFor="let book of author.books">
+    {{book.title}}
+    
+  </h6>
+ 
+<form (submit)="createBook()">
+  <input type="text" class="form-control" name="book.title" placeholder="Book Title" [(ngModel)]="book.title">
+  <input type="submit" class="btn btn-primary">
+</form>
+</div>

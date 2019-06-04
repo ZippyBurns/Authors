@@ -1,0 +1,19 @@
+<div class="container">
+  <button class="btn btn-primary" [routerLink]="['/new']">Add New Author</button>
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let auth of allAuthors">
+        <th [routerLink]="['/show/'+auth._id]" scope="row">{{ auth.name }}</th>
+        <td>
+          <button [routerLink]="['/edit/'+auth._id]" class="btn btn-warning mr-2">Edit</button>
+          <button  class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
